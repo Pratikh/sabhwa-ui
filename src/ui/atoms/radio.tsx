@@ -2,12 +2,22 @@ interface RadioProps {
   id?: string;
   name?: string;
   value?: string;
+  className?: string;
+  labelClassName?: string;
 }
-export default function Radio({ id, name, value }: RadioProps) {
+export default function Radio({
+  id,
+  name,
+  value,
+  className,
+  labelClassName,
+}: RadioProps) {
   return (
-    <div>
+    <div className={className}>
       <input type="radio" id={id} name={name} value={value} />{" "}
-      <label htmlFor={id}>{value}</label>
+      <label htmlFor={id} className={labelClassName}>
+        {value}
+      </label>
     </div>
   );
 }
