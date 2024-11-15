@@ -3,14 +3,15 @@ import { cva, type VariantProps } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
 
-const buttonVariants = cva("font-[17px] font-bold", {
+const buttonVariants = cva("text-[17px] font-bold", {
   variants: {
     variant: {
-      default: "text-primary bg-[#F8F0FF] rounded-[23px]",
+      default:
+        "text-primary bg-[#F8F0FF] rounded-[23px] text-[14px] md:text-[18px]",
       secondary: "text-[#FFD600] ",
     },
     size: {
-      default: "h-10 px-4 py-2",
+      default: "px-[5px] md:px-4 py-[5px]  md:py-2",
       sm: "h-9 rounded-md px-3",
     },
   },
