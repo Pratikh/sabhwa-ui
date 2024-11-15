@@ -1,4 +1,4 @@
-import SurveyModal from "@/ui/organism/survey-modal";
+import SurveyModal from "./survey-modal";
 import type { Meta, StoryObj } from "@storybook/react";
 
 const meta = {

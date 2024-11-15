@@ -1,20 +1,22 @@
-import RadioButton from "@/ui/atoms/radio";
+import UserName from "./user-name";
 import type { Meta, StoryObj } from "@storybook/react";
 
 const meta = {
-  title: "Atom/RadioButton",
-  component: RadioButton,
+  title: "Atom/UserName",
+  component: UserName,
   parameters: {
     layout: "centered",
+    backgrounds: { default: "light" },
   },
   tags: ["autodocs"],
   argTypes: {},
   args: {
-    id: "radio-id",
-    name: "better-me",
-    value: "Better than me",
+    firstName: "Suresh",
+    lastName: "Mohak",
+    nickName: "Surya",
+    countryCode: "in",
   },
-} satisfies Meta<typeof RadioButton>;
+} satisfies Meta<typeof UserName>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

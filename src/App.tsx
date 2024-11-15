@@ -1,5 +1,5 @@
 import "./App.css";
-import SurveyModal from "./ui/organism/survey-modal";
+import SurveyModal from "./ui/organism/survey-modal/survey-modal";
 
 function App() {
   return (
