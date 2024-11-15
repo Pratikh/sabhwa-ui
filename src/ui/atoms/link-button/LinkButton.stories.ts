@@ -1,10 +1,9 @@
-import Button from "@/ui/atoms/button";
+import LinkButton from "./link-button";
 import type { Meta, StoryObj } from "@storybook/react";
-import { fn } from "@storybook/test";
 
 const meta = {
-  title: "Atom/Button",
-  component: Button,
+  title: "Atom/LinkButton",
+  component: LinkButton,
   parameters: {
     layout: "centered",
   },
@@ -21,16 +20,9 @@ const meta = {
       ],
       control: { type: "radio" },
     },
-    size: {
-      options: ["default", "sm", "lg"],
-      control: { type: "radio" },
-    },
-    disabled: {
-      control: { type: "boolean" },
-    },
   },
-  args: { onClick: fn(), children: "Button" },
-} satisfies Meta<typeof Button>;
+  args: { href: "/", buttonLabel: "Link button" },
+} satisfies Meta<typeof LinkButton>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

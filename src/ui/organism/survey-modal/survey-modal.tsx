@@ -1,5 +1,5 @@
-import Button from "../atoms/button";
-import Radio from "../atoms/radio";
+import Button from "../../atoms/button/button";
+import Radio from "../../atoms/radio-button/radio";
 
 const surveyQuestion = [
   {
@@ -66,10 +66,10 @@ export default function SurveyModal() {
           <div className="flex gap-2 justify-start items-center pt-4">
             <p className="text-[#353535]">Now you have</p>
             <div className="flex justify-center items-center">
-              <img src="/icons/white_ticket.svg" /> <p>× 2</p>
+              <img src="icons/white_ticket.svg" /> <p>× 2</p>
             </div>
             <div className="flex justify-center items-center">
-              <img src="/icons/blue_ticket.svg" />
+              <img src="icons/blue_ticket.svg" />
               <p>× 2</p>
             </div>
           </div>
