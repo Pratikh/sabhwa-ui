@@ -1,3 +1,5 @@
+import { cn } from "@/lib/utils";
+
 interface RadioProps {
   id?: string;
   name?: string;
@@ -15,7 +17,7 @@ export default function Radio({
   return (
     <div className={className}>
       <input type="radio" id={id} name={name} value={value} />{" "}
-      <label htmlFor={id} className={labelClassName}>
+      <label htmlFor={id} className={cn(labelClassName, "cursor-pointer")}>
         {value}
       </label>
     </div>
