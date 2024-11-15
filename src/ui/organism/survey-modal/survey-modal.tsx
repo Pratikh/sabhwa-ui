@@ -7,9 +7,9 @@ const surveyQuestion = [
     question: "1. Your partner speaks English",
     name: "english_level",
     options: [
-      { label: "Better than me", name: "1" },
-      { label: "As much as me", name: "2" },
-      { label: "Not as much as me", name: "3" },
+      { label: "Better than me", name: "1-1" },
+      { label: "As much as me", name: "1-2" },
+      { label: "Not as much as me", name: "1-3" },
     ],
   },
   {
@@ -17,9 +17,9 @@ const surveyQuestion = [
     question: "2. Want to meet him/her again?",
     name: "want_to_meet_again",
     options: [
-      { label: "👍 I'd love to!", name: "1" },
-      { label: "😐 I don't care", name: "2" },
-      { label: "🙅 No, avoid as possible", name: "3" },
+      { label: "👍 I'd love to!", name: "2-1" },
+      { label: "😐 I don't care", name: "2-2" },
+      { label: "🙅 No, avoid as possible", name: "2-3" },
     ],
   },
 ];
